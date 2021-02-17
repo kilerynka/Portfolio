@@ -120,16 +120,34 @@ section.part3 {
 
 
 section.part3 div.html {
-  margin-top: 50px;
-  margin-left: -150px;
-  animation: html .5s linear 1s 1 alternate forwards;
+  position: absolute;
+  top: 205vh;
+  left: -20vw;
 }
 
 section.part3 div.css {
   position: absolute;
-  bottom: -1087.5px;
-  left: 1300px;
-  animation: css .5s linear 1s 1 alternate forwards;
+  top: 205vh;
+  right: -20vw;
+}
+
+section.part3 div.git {
+  position: absolute;
+  top: 280vh;
+  left: -20vw;
+}
+
+section.part3 div.sass {
+  position: absolute;
+  top: 280vh;
+  right: -20vw;
+}
+
+section.part3 div.javascript {
+  position: absolute;
+  top: 250vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -141,11 +159,11 @@ section.part3 p {
 
 @keyframes html {
   0% {
-    margin-left: -150px;
+    left: -20vw;
   }
 
   100% {
-    margin-left: 200px;
+    left: 18vw;
   }
 
 
@@ -153,10 +171,30 @@ section.part3 p {
 
 @keyframes css {
   0% {
-    left: 1300px;
+    right: -20vw;
   }
 
   100% {
-    left: 950px;
+    right: calc(8vw + 41.9px);
+  }
+}
+
+@keyframes git {
+  0% {
+    left: -20vw;
+  }
+
+  100% {
+    left: 18vw;
+  }
+}
+
+@keyframes sass {
+  0% {
+    right: -20vw;
+  }
+
+  100% {
+    right: 8vw;
   }
 }
