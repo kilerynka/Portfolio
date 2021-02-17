@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* menu */
+.menu {
+  position: fixed;
+  height: 100vh;
+  width: 10vh;
+  background-color: #00070d;
+  box-shadow: 2px 5px 5px 5px;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6593a6;
+  font-size: 25px;
+}
+
+span {
+  font-family: "Lexend Mega", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav div {
+  padding-bottom: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home:hover,
+.about:hover,
+.skills:hover,
+.projects:hover,
+.contact:hover {
+  color: #89d1d9;
+}
+
+/* sekcja 1 */
+
+section.part1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #011826;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 80px;
+
+  color: #6593a6;
+  padding-top: 30vh;
+}
+
+h1 span {
+  display: block;
+  content: "\A";
+  white-space: pre;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.firstLine {
+  padding-bottom: 50px;
+}
+
+/* sekcja 2 */
+
+section.part2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #224459;
+}
+
+div h1 {
+  position: relative;
+  top: -200px;
+  left: -418px;
+  font-size: 30px;
+  color: #00070d;
+}
+
+section.part2 div p {
+  position: relative;
+  top: -180px;
+  left: 150px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+}
+
+.myGoals {
+  position: relative;
+  left: 700px;
+}
+
+/* sekcja 3 */
+
+section.part3 {
+  height: 100vh;
+  width: 100vw;
+  font-size: 50px;
+  color: #6593a6;
+  background-color: #011826;
+}
+
+
+
+section.part3 div.html {
+  margin-top: 50px;
+  margin-left: -150px;
+  animation: html .5s linear 1s 1 alternate forwards;
+}
+
+section.part3 div.css {
+  position: absolute;
+  bottom: -1087.5px;
+  left: 1300px;
+  animation: css .5s linear 1s 1 alternate forwards;
+}
+
+
+section.part3 p {
+  font-family: "Lexend Mega", sans-serif;
+}
+
+
+
+@keyframes html {
+  0% {
+    margin-left: -150px;
+  }
+
+  100% {
+    margin-left: 200px;
+  }
+
+
+}
+
+@keyframes css {
+  0% {
+    left: 1300px;
+  }
+
+  100% {
+    left: 950px;
+  }
+}
